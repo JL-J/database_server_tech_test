@@ -22,7 +22,7 @@ class App < Sinatra::Base
 
   get '/get' do
     @memory = session[:memory]
-    @key = params[:somekey]
+    @key = params[:key]
     @value = @memory.return_data(@key)
     erb :get
   end
