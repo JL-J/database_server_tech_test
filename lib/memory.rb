@@ -10,4 +10,8 @@ class Memory
     @store.merge!(hash)
   end
 
+  def return_data(key)
+    @store[key] 
+  end
+
 end
