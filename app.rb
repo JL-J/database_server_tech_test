@@ -11,13 +11,20 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    "Hello world"
+    redirect '/set'
   end
 
   get '/set' do
     @memory = session[:memory]
     @memory.save_data(params)
     erb :set
+  end
+
+  get '/get' do
+    @memory = session[:memory]
+    @key = params[:somekey]
+    @value = @memory.return_data(@key)
+    erb :get
   end
 
   run! if app_file == $0
