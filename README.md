@@ -26,6 +26,7 @@ This program is written in Ruby and tested using RSpec and Capybara. I chose to 
 The program is structured in the MVC format. The logic for the memory has been extracted into an independent class so that it could be easily adapted if a database was added.
 
 Whilst the view for the page '/set' could be considered surplus to the requirements, I decided to include one for two reasons:
-  a) Testing;
-  b) So the user can be assured their key-value pairs are being submitted.     
+  - Testing;
+  - So the user can be assured their key-value pairs are being submitted.     
+  
 Considering the user experience, I also decided to set up '/' to redirect to '/set' as I did not want the user to be greeted by an error if they accidentally went straight to `localhost:4000/`.
