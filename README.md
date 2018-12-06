@@ -5,8 +5,8 @@
 - Run `bundle install`
 - To start the server, load the app file from the command line `ruby app.rb`
 - Visit `localhost:4000` in your browser
-- To add data to the memory visit `localhost:4000/set` and add a key pair value to the url, e.g.: `localhost:4000/set?somekey=somevalue`
-- To retrieve data from the memory visit `localhost:4000/get` and add the key that you are searching for to the url, e.g.: `localhost:4000/get?key=somekey`
+- To store data in the memory visit `localhost:4000/set?` and add a key value pair to the url, e.g.: `localhost:4000/set?somekey=somevalue`
+- To retrieve data from the memory visit `localhost:4000/get?key=` and add the key that you are searching for to the url, e.g.: `localhost:4000/get?key=somekey`
 
 ## Running tests ##
 Run RSpec form the command line: `rspec`
